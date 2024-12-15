@@ -3,25 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
+    <title>Welcome - Hello World</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
             background-color: #f0f0f0;
+            text-align: center;
         }
-        b {
+        .container {
+            max-width: 600px;
+            padding: 20px;
+        }
+        h1 {
             font-size: 48px;
             color: #333;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            margin-bottom: 20px;
+        }
+        p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #45a049;
         }
     </style>
 </head>
 <body>
-    <b>Hello World</b>
+    <div class="container">
+        <h1>Hello World</h1>
+        <p>Welcome to our website! We're excited to have you here. This is a simple demonstration of how we can make a basic HTML page more engaging with some added content and styling.</p>
+        <button onclick="alert('Thanks for clicking!')">Click me!</button>
+    </div>
 </body>
 </html>
